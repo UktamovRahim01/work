@@ -1,0 +1,16 @@
+@media (max-width: 992px) {
+  .saidbar {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .main .content .new_post {
+    padding: 0 15px;
+  }
+  .main .content .new_post .input_box input {
+    font-size: 12px;
+  }
+  .main .content .new_post .input_box .func_boxes {
+    gap: 10px;
+  }
+}

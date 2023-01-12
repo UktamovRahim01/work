@@ -1,0 +1,449 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gotham Pro";
+}
+
+button {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background: #F7F9FB;
+}
+.main .content {
+  margin-top: 50px;
+  max-width: 850px;
+  min-width: 300px;
+  padding: 0 10px;
+}
+.main .content .new_post {
+  padding: 25px 30px 20px;
+  height: 135px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 0;
+}
+.main .content .new_post h1 {
+  font-size: 12px;
+  color: #181818;
+}
+.main .content .new_post hr {
+  height: 1px;
+  width: 100%;
+  background-color: #F4F4F4;
+  border: 0;
+}
+.main .content .new_post .input_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .content .new_post .input_box input {
+  border: 0;
+  max-width: 196px;
+  height: 17px;
+  font-size: 18px;
+  color: rgba(24, 24, 24, 0.2);
+}
+.main .content .new_post .input_box .func_boxes {
+  display: flex;
+  gap: 30px;
+}
+.main .content .new_post .input_box .func_boxes button {
+  max-width: 24px;
+  height: 24px;
+  border: 0;
+  background-color: white;
+}
+.main .content .new_post .input_box .func_boxes button img {
+  width: 100%;
+}
+.main .content .sort {
+  padding: 35px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.main .content .sort h2 {
+  font-size: 12px;
+  color: #181818;
+}
+.main .content .sort a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #0275B1;
+}
+.main .content .sort img {
+  width: 14px;
+  height: 14px;
+}
+.main .content .one_post {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: white;
+  border: 0;
+}
+.main .content .one_post .avtor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px;
+  border-bottom: 1px solid #F4F4F4;
+}
+.main .content .one_post .avtor .avtor_a {
+  font-size: 10px;
+  margin-right: 13px;
+}
+.main .content .one_post .avtor .avtor_a span {
+  color: #181818;
+}
+.main .content .one_post .avtor .avtor_a a {
+  color: #0275B1;
+  text-decoration: none;
+}
+.main .content .one_post .avtor .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 20px;
+  height: 12px;
+}
+.main .content .one_post .avtor .icon .bol {
+  padding: 2px;
+  width: 2px;
+  height: 1px;
+  background-color: black;
+  border: 0;
+  border-radius: 100%;
+}
+.main .content .one_post .content_text {
+  padding: 15px 30px;
+}
+.main .content .one_post .content_text .icon {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.main .content .one_post .content_text .icon img {
+  width: 52px;
+  height: 52px;
+}
+.main .content .one_post .content_text .icon h3 {
+  font-size: 14px;
+  color: #181818;
+}
+.main .content .one_post .content_text .icon span {
+  font-size: 10px;
+  color: #181818;
+}
+.main .content .one_post .content_text .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 5px;
+}
+.main .content .one_post .content_text .text p {
+  line-height: 150%;
+  font-size: 14px;
+  color: #181818;
+}
+.main .content .one_post .content_text .text a {
+  font-size: 12px;
+  color: #0275B1;
+  text-decoration: none;
+}
+.main .content .one_post .coments {
+  width: 100%;
+  border-top: 1px solid #F4F4F4;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .content .one_post .coments .coment {
+  display: flex;
+  align-items: center;
+}
+.main .content .one_post .coments .coment .like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-right: 1px solid #F4F4F4;
+  width: 90px;
+  height: 50px;
+}
+.main .content .one_post .coments .share {
+  width: 126px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #F4F4F4;
+  gap: 8px;
+}
+.main .content .two_post {
+  margin-top: 20px;
+  margin-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: white;
+  border: 0;
+}
+.main .content .two_post .avtor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px;
+  border-bottom: 1px solid #F4F4F4;
+}
+.main .content .two_post .avtor .avtor_a {
+  font-size: 10px;
+}
+.main .content .two_post .avtor .avtor_a span {
+  color: #181818;
+}
+.main .content .two_post .avtor .avtor_a a {
+  color: #0275B1;
+  text-decoration: none;
+}
+.main .content .two_post .avtor .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 20px;
+  height: 12px;
+}
+.main .content .two_post .avtor .icon .bol {
+  padding: 2px;
+  width: 2px;
+  height: 1px;
+  background-color: black;
+  border: 0;
+  border-radius: 100%;
+}
+.main .content .two_post .content_text {
+  padding: 15px 30px;
+}
+.main .content .two_post .content_text .icon {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.main .content .two_post .content_text .icon img {
+  width: 52px;
+  height: 52px;
+}
+.main .content .two_post .content_text .icon h3 {
+  font-size: 14px;
+  color: #181818;
+}
+.main .content .two_post .content_text .icon span {
+  font-size: 10px;
+  color: #181818;
+}
+.main .content .two_post .content_text .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 5px;
+}
+.main .content .two_post .content_text .text p {
+  font-size: 14px;
+  color: #181818;
+}
+.main .content .two_post .content_text .text a {
+  font-size: 12px;
+  color: #0275B1;
+  text-decoration: none;
+}
+.main .content .two_post .coments {
+  width: 100%;
+  border-top: 1px solid #F4F4F4;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .content .two_post .coments .coment {
+  display: flex;
+  align-items: center;
+}
+.main .content .two_post .coments .coment .like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-right: 1px solid #F4F4F4;
+  width: 90px;
+  height: 50px;
+}
+.main .content .two_post .coments .share {
+  width: 126px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #F4F4F4;
+  gap: 8px;
+}
+.main .saidbar {
+  padding: 0 10px;
+  max-width: 310px;
+  min-width: 290px;
+  margin-top: 50px;
+}
+.main .saidbar .acaunt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 26px;
+}
+.main .saidbar .acaunt .bg {
+  width: 100%;
+}
+.main .saidbar .acaunt .ava {
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+}
+.main .saidbar .acaunt h4 {
+  color: #181818;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.main .saidbar .acaunt h4 img {
+  padding-left: 4px;
+  width: 14px;
+  height: 14px;
+}
+.main .saidbar .acaunt p {
+  line-height: 150%;
+  font-size: 10px;
+  color: #181818;
+  text-align: center;
+}
+.main .saidbar .write {
+  margin-top: 20px;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.main .saidbar .write button {
+  padding: 11px 48px;
+  border: 0;
+  background: #0077B5;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+.main .saidbar .my_groups {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 28px;
+}
+.main .saidbar .my_groups .header {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 94px;
+}
+.main .saidbar .my_groups .header h5 {
+  font-size: 12px;
+  color: #181818;
+}
+.main .saidbar .my_groups .header a {
+  text-decoration: none;
+  color: #0275B1;
+  font-size: 12px;
+}
+.main .saidbar .my_groups hr {
+  height: 1px;
+  width: 80%;
+  background-color: #F4F4F4;
+  border: 0;
+}
+.main .saidbar .my_groups .groups {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.main .saidbar .my_groups .groups .group {
+  width: 230px;
+  height: 80px;
+  padding: 14px 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  border-radius: 6px;
+}
+.main .saidbar .my_groups .all {
+  padding-top: 25px;
+  width: 230px;
+}
+.main .saidbar .my_groups .all a {
+  font-size: 12px;
+  color: #0275B1;
+  text-decoration: none;
+}
+.main .saidbar .followed {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px 31px;
+  background-color: white;
+  padding-bottom: 31px;
+  margin-bottom: 20px;
+}
+.main .saidbar .followed h5 {
+  font-size: 12px;
+  color: #181818;
+}
+.main .saidbar .followed hr {
+  margin: 20px 0;
+  height: 1px;
+  padding: 0 30px;
+  background-color: #F4F4F4;
+  border: 0;
+}
+.main .saidbar .followed .layberi {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.main .saidbar .followed .layberi a {
+  padding: 7px 14px 7px 12px;
+  background: #E9F0F8;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #181818;
+}
